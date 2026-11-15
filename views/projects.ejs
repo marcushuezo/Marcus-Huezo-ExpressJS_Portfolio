@@ -1,0 +1,12 @@
+<h1 class="mb-4">My Projects</h1>
+
+<div class="d-flex flex-column gap-3">
+  <% for (const project of projects) { %>
+    <article class="card portfolio-card p-4 p-lg-5">
+      <h2 class="h5 fw-bold mb-2">
+        <%= project.title %> - <%= project.context %>
+      </h2>
+      <p class="mb-0"><%= project.description %></p>
+    </article>
+  <% } %>
+</div>
