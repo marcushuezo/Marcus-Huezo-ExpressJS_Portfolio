@@ -1,0 +1,23 @@
+<%
+const links = [
+  { label: 'Home', url: '/', page: 'index' },
+  { label: 'About Me', url: '/about', page: 'about' },
+  { label: 'Projects', url: '/projects', page: 'projects' },
+  { label: 'Contact Me', url: '/contact', page: 'contact' }
+];
+%>
+
+<header class="site-header">
+  <nav class="container d-flex justify-content-center py-3" aria-label="Main navigation">
+    <ul class="nav flex-wrap justify-content-center gap-2 gap-md-4 gap-lg-5">
+      <% for (const link of links) { %>
+        <li class="nav-item">
+          <a class="nav-link rounded <%= page === link.page ? 'active' : '' %>"
+            href="<%= link.url %>" <% if (page === link.page) { %>aria-current="page"<% } %>>
+            <%= link.label %>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+  </nav>
+</header>

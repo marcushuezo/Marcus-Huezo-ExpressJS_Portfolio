@@ -8,22 +8,40 @@
     <div class="col-md-7 order-md-1">
       <h1 class="display-5 mb-3">Hi, I'm <%= site.name %></h1>
       <p class="lead">I'm a second-year Networking and Information Technology Security student at Ontario Tech University.</p>
-      <p>I interned at AGF Investments as a Junior Technical Support Analyst, where I deployed Windows devices and helped employees resolve IT issues. I'm interested in cybersecurity and cloud engineering.</p>
+      <p>This summer i interned as an Junior Technical Support Analyst at AGF Investments, where I supported users and helped solve technical issues. I'm interested in cybersecurity and cloud engineering.</p>
       <p>Outside of school, I enjoy playing and refereeing soccer, travelling, and following financial markets.</p>
-
+      <h2 class="h4 mt-4 mb-3">More about me</h2>
+      <p>Visit my About Me and Projects pages to learn more about my internship experience, the technical skills I'm building, my interests outside of school, and the projects I have built.</p>
       <div class="d-flex flex-wrap gap-2 mt-4">
-        <a class="btn btn-primary" href="/about">About Me</a>
-        <a class="btn btn-outline-primary" href="/projects">View My Projects</a>
+        <a class="btn btn-primary" href="/about">Learn more about me</a>
+        <a class="btn btn-outline-primary" href="/projects">View my projects</a>
       </div>
     </div>
   </div>
 </section>
-
 <section class="mt-5" aria-labelledby="connect-heading">
-  <h2 class="h4" id="connect-heading">Connect with Me</h2>
-  <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
-    <li><a href="mailto:<%= site.email %>"><%= site.email %></a></li>
-    <li><a href="<%= site.github %>">GitHub</a></li>
-    <li><a href="<%= site.linkedin %>">LinkedIn</a></li>
-  </ul>
+  <h2 class="h4 fw-bold mb-4" id="connect-heading">Connect with Me</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 g-3 g-lg-4 g-xl-5">
+    <div class="col">
+      <div class="connect-box h-100">
+        <h3>Email</h3>
+        <a href="mailto:<%= site.email %>"><%= site.email %></a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="connect-box h-100">
+        <h3>GitHub</h3>
+        <a href="<%= site.github %>">View my GitHub</a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="connect-box h-100">
+        <h3>LinkedIn</h3>
+        <a href="<%= site.linkedin %>">View my LinkedIn</a>
+      </div>
+    </div>
+  </div>
 </section>

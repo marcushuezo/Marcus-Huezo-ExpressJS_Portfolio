@@ -32,6 +32,8 @@ h1, h2, h3 {
 }
 .site-header .nav-link {
   padding: 0.45rem 0.65rem;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 .site-header .nav-link:hover,
 .site-header .nav-link.active {
@@ -64,7 +66,7 @@ h1, h2, h3 {
   --bs-btn-hover-border-color: var(--navy);
 }
 .profile-photo {
-  width: clamp(10rem, 65vw, 18rem);
+  width: clamp(10rem, 65vw, 22rem);
   aspect-ratio: 1;
   object-fit: cover;
 }
@@ -81,7 +83,13 @@ h1, h2, h3 {
 }
 .cert-badge {
   width: 5.5rem;
+  height: 5.5rem;
+  object-fit: contain;
+}
+.security-badge-frame img {
+  width: 10.5rem;
   height: auto;
+  max-width: none;
 }
 .travel-photo {
   width: 100%;
@@ -90,6 +98,30 @@ h1, h2, h3 {
 }
 .contact-card {
   max-width: 42rem;
+}
+.connect-box {
+  padding: 24px 30px;
+  background-color: #c0c4b7;
+  border: 1px solid #8a9eab;
+  border-radius: 8px;
+}
+
+.connect-box h3 {
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.connect-box a {
+  color: var(--navy);
+  font-size: 18px;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.connect-box a:hover {
+  color: var(--slate);
 }
 @media (max-width: 480px) {
   .site-header .nav {
