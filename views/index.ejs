@@ -1,0 +1,29 @@
+<section class="card portfolio-card p-4 p-lg-5">
+  <div class="row align-items-center g-4 g-lg-5">
+    <div class="col-md-5 order-md-2 text-center">
+      <img class="profile-photo img-fluid rounded-circle"
+        src="/images/marcus.jpg" alt="Portrait of Marcus Huezo">
+    </div>
+
+    <div class="col-md-7 order-md-1">
+      <h1 class="display-5 mb-3">Hi, I'm <%= site.name %></h1>
+      <p class="lead">I'm a second-year Networking and Information Technology Security student at Ontario Tech University.</p>
+      <p>I interned at AGF Investments as a Junior Technical Support Analyst, where I deployed Windows devices and helped employees resolve IT issues. I'm interested in cybersecurity and cloud engineering.</p>
+      <p>Outside of school, I enjoy playing and refereeing soccer, travelling, and following financial markets.</p>
+
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a class="btn btn-primary" href="/about">About Me</a>
+        <a class="btn btn-outline-primary" href="/projects">View My Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-5" aria-labelledby="connect-heading">
+  <h2 class="h4" id="connect-heading">Connect with Me</h2>
+  <ul class="list-unstyled d-flex flex-wrap gap-3 mb-0">
+    <li><a href="mailto:<%= site.email %>"><%= site.email %></a></li>
+    <li><a href="<%= site.github %>">GitHub</a></li>
+    <li><a href="<%= site.linkedin %>">LinkedIn</a></li>
+  </ul>
+</section>

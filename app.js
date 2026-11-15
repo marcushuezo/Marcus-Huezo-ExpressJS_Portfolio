@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.site = {
   name: 'Marcus Huezo',
-  email: 'marcus.huezo@bell.net',
+  email: 'marcushuezo@bell.net',
   github: 'https://github.com/marcushuezo',
   linkedin: 'https://www.linkedin.com/in/marcushuezo/'
 };

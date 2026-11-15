@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> | <%= site.name %></title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <% if (page === 'contact') { %>
+    <script src="/javascripts/contact.js" defer></script>
+  <% } %>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <%- include('partials/header') %>
+
+  <main class="container py-4 py-md-5 flex-grow-1">
+    <%# routes/index.js supplies the name of the page to display. %>
+    <%- include(page) %>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

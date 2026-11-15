@@ -1,0 +1,78 @@
+<h1 class="mb-4">About Me</h1>
+
+<section class="mb-5" aria-labelledby="intro-heading">
+  <h2 class="h4" id="intro-heading">Introduction Video</h2>
+  <video class="intro-video rounded" controls preload="metadata"
+    poster="/images/marcus.jpg" aria-labelledby="intro-heading">
+    <source src="/videos/intro.mp4" type="video/mp4">
+    <a href="/videos/intro.mp4">Download my introduction video</a>
+  </video>
+</section>
+
+<section class="mb-5">
+  <h2 class="mb-3">Experience</h2>
+  <div class="row g-3">
+    <div class="col-lg-7">
+      <article class="card portfolio-card h-100 p-4">
+        <img class="experience-logo mb-3" src="/images/agf.jpg" alt="AGF Investments logo">
+        <h3 class="h4">AGF Investments</h3>
+        <p class="fw-semibold">Junior Technical Support Analyst Intern · Summer 2026</p>
+        <ul class="mb-0">
+          <li>Imaged and deployed 92+ Windows devices using SCCM and BitLocker, reducing provisioning from two days to same-day delivery.</li>
+          <li>Resolved and documented 190+ incidents and service requests in ServiceNow.</li>
+          <li>Supported onboarding and access provisioning using Active Directory, Microsoft Entra ID, and Intune.</li>
+          <li>Troubleshot VPN, MFA, mapped drives, and docking issues and helped test enterprise software rollouts.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="col-lg-5">
+      <article class="card portfolio-card h-100 p-4">
+        <img class="experience-logo mb-3" src="/images/whitby-fc.png" alt="Whitby FC logo">
+        <h3 class="h4">Whitby FC</h3>
+        <p class="fw-semibold">Ontario Soccer Certified Entry-Level Referee</p>
+        <p class="mb-0">I officiated youth and adult matches, applying the Laws of the Game and helping resolve disagreements on the field.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <h2 class="mb-3">Certifications</h2>
+  <article class="card portfolio-card p-4 flex-sm-row align-items-start gap-3">
+    <img class="cert-badge" src="/images/az-900.jpg" alt="Microsoft Azure Fundamentals badge">
+    <div>
+      <h3 class="h4">Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+      <p class="mb-0">I earned this certification in November 2026. It covers cloud concepts, Azure services, security, and governance.</p>
+    </div>
+  </article>
+    <article class="card portfolio-card p-4 mt-3 flex-sm-row align-items-start gap-3">
+    <img class="cert-badge" src="/images/security%2B.webp" alt="CompTIA Security+ logo">
+    <div>
+      <h3 class="h4">CompTIA Security+</h3>
+      <p class="mb-0">I am currently studying threat mitigation, network and cloud security, identity and access management, and incident response.</p>
+    </div>
+  </article>
+</section>
+
+</section>
+
+<section class="mb-5">
+  <h2>Interests and Hobbies</h2>
+  <p>I enjoy playing soccer, going to the gym, and travelling. I also follow financial markets, trade options, and listen to podcasts like The Iced Coffee Hour.</p>
+</section>
+
+<section>
+  <h2 class="mb-3">Places I've Visited</h2>
+  <div class="row row-cols-1 row-cols-sm-3 g-3">
+    <% for (const place of travel) { %>
+      <div class="col">
+        <figure class="card portfolio-card overflow-hidden h-100 mb-0">
+          <img class="travel-photo" src="/images/<%= place.image %>"
+            alt="<%= place.alt %>" loading="lazy">
+          <figcaption class="p-3 fw-semibold"><%= place.city %></figcaption>
+        </figure>
+      </div>
+    <% } %>
+  </div>
+</section>
