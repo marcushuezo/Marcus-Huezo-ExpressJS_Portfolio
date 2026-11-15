@@ -1,0 +1,35 @@
+<h1 class="mb-3">Contact Me</h1>
+<p class="mb-4">Let's get in touch! Fill out the form below.</p>
+
+<form id="contact-form" class="card portfolio-card contact-card p-4 p-md-5"
+  action="mailto:<%= site.email %>" method="post" enctype="text/plain">
+
+  <div class="mb-3">
+    <label class="form-label" for="name">Name</label>
+    <input class="form-control" type="text" id="name" name="name"
+      placeholder="Your Name" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" type="email" id="email" name="email"
+      placeholder="Your Email Address" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="phone">Cell Number</label>
+    <input class="form-control" type="tel" id="phone" name="phone"
+      placeholder="Your Phone Number" required>
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label" for="message">Comments</label>
+    <textarea class="form-control" id="message" name="message"
+      placeholder="Your Message to Me" rows="5" required></textarea>
+  </div>
+
+  <div class="d-flex flex-wrap gap-3">
+    <button class="btn btn-primary px-4" type="submit">Submit</button>
+    <button class="btn btn-primary px-4" type="reset">Reset</button>
+  </div>
+</form>

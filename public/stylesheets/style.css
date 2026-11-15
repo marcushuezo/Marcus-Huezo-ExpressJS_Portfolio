@@ -3,7 +3,7 @@
   --slate: #4c6170;
   --olive: #65695b;
   --cream: #ebe6dc;
-  --paper: #fffdf8;
+  --paper: #ccc;
 }
 body {
   background-color: var(--cream);
@@ -82,14 +82,9 @@ h1, h2, h3 {
   object-position: left;
 }
 .cert-badge {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 5.9rem;
+  height: 5.9rem;
   object-fit: contain;
-}
-.security-badge-frame img {
-  width: 10.5rem;
-  height: auto;
-  max-width: none;
 }
 .travel-photo {
   width: 100%;
@@ -97,7 +92,29 @@ h1, h2, h3 {
   object-fit: cover;
 }
 .contact-card {
-  max-width: 42rem;
+  max-width: none;
+  background-color: #ccc;
+  color: #2b3e54;
+  border-color: #65695b;
+  border-radius: 8px;
+}
+.contact-card .form-label {
+  font-size: 18px;
+}
+
+.contact-card .form-control {
+  background-color: #ebe6dc;
+  color: #2b3e54;
+  border-color: #65695b;
+}
+
+.contact-card .btn-primary {
+  background-color: #4c6170;
+  border-color: #8a9eab;
+}
+
+.contact-card .btn-primary:hover {
+  background-color: #2b3e54;
 }
 .connect-box {
   padding: 24px 30px;
@@ -127,4 +144,7 @@ h1, h2, h3 {
   .site-header .nav {
     width: 100%;
   }
+}
+section.portfolio-card {
+  background-color: #f7f4ed;
 }
