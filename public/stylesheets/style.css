@@ -1,0 +1,98 @@
+:root {
+  --navy: #2b3e54;
+  --slate: #4c6170;
+  --olive: #65695b;
+  --cream: #ebe6dc;
+  --paper: #fffdf8;
+}
+body {
+  background-color: var(--cream);
+  color: var(--navy);
+  font-family: "Montserrat", Arial, sans-serif;
+}
+h1, h2, h3 {
+  font-weight: 700;
+}
+.site-header {
+  background: linear-gradient(90deg, var(--navy), var(--slate), var(--olive));
+}
+.site-footer {
+  background: linear-gradient(135deg, var(--navy), var(--slate), var(--olive));
+  color: white;
+}
+.site-name,
+.site-header .nav-link,
+.site-footer a {
+  color: white;
+}
+.site-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-header .nav-link {
+  padding: 0.45rem 0.65rem;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  background-color: var(--navy);
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.site-header a:focus-visible,
+.site-footer a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+.portfolio-card {
+  background-color: var(--paper);
+  border: 1px solid #c0c4b7;
+  border-radius: 1rem;
+  color: inherit;
+}
+.btn-primary {
+  --bs-btn-bg: var(--navy);
+  --bs-btn-border-color: var(--navy);
+  --bs-btn-hover-bg: var(--slate);
+  --bs-btn-hover-border-color: var(--slate);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--navy);
+  --bs-btn-border-color: var(--navy);
+  --bs-btn-hover-bg: var(--navy);
+  --bs-btn-hover-border-color: var(--navy);
+}
+.profile-photo {
+  width: clamp(10rem, 65vw, 18rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.intro-video {
+  width: 100%;
+  max-width: 48rem;
+  background-color: var(--navy);
+}
+.experience-logo {
+  width: 9rem;
+  height: 4rem;
+  object-fit: contain;
+  object-position: left;
+}
+.cert-badge {
+  width: 5.5rem;
+  height: auto;
+}
+.travel-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.contact-card {
+  max-width: 42rem;
+}
+@media (max-width: 480px) {
+  .site-header .nav {
+    width: 100%;
+  }
+}
