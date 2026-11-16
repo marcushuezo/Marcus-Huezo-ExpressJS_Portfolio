@@ -2,7 +2,7 @@ My website:
 
 Citations:
 
-i used chatgpt to help me set up my site with nodejs and express generator, run it locally and provide me the terminal commands for starting my site as i was running into errors. it Helped me with git commands and pushing to githubas as i was having errors and provided me with commands to fix it. AI also gave me suggestions on how to organize my site to run the site such as having public/  app.js. and having the footer and header in partials as having it in views site was not working.
+i used chatgpt to help me set up my site with nodejs and express generator, run it locally and provide me the terminal commands for starting my site as i was running into errors. it Helped me with git commands and pushing to github as i was having errors and provided me with commands to fix it. AI also gave me suggestions on how to organize my site to run the site such as having public/  app.js. and having the footer and header in partials as having it in views site was not working.
 
 - used ai to help me understand bootstrap classes for the homepage and contact for exmaple in index.js and contact.ejs
 
